@@ -14,9 +14,9 @@ cat - << EOF
 
            SPACE
 
-   LEFT:   Z
-   RIGHT:  X
-   FIRE:   C
+   LEFT:   A
+   RIGHT:  D
+   FIRE:   F
 
    QUIT:   Q
 
@@ -229,7 +229,7 @@ do
        [ $ship -gt 0 ] && ((ship=ship-1)) 
 	drawship
 	;;
-    l) 
+    d) 
        [ $ship -lt $FARRIGHT ] && ((ship=ship+1)) 
 	drawship
 	;;
